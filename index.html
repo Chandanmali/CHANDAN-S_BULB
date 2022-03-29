@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHANDAN'S_BULB</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .off {
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        bottom: 25px;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+      }
+      .bulb-on {
+        position: relative;
+        bottom: 250px;
+        left: 500px;
+        padding: 10px;
+        font-weight: bold;
+        background-color: green;
+        flex-wrap: wrap;
+        margin: 90px;
+      }
+      
+      .bulb-on:hover{
+        background-color:bisque;
+      }
+      @media(max-width: 998px) {
+        .off {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+        bottom: 20px;
+      }
+      .bulb-on {
+        position: relative;
+        bottom: 50px;
+        left: 40px;
+        padding: 15px;
+        margin: 20px;
+        font-weight: bold;
+        background-color: green;
+        flex-wrap: wrap;
+        font-size: 16px;
+      }
+      .bulb-on:hover{
+        background-color:bisque;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 37px;
+      }
+
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="head">CHANDAN'S_BULB</h1>
+      <img class="off" src="./img/off bulb.jpg" alt="Bulb off" />
+
+      <div class="btn">
+        <button class="bulb-on" onclick="bulbOn()">TURN ON</button>
+        <button class="bulb-on" onclick="bulbOff()">TURN OFF</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
